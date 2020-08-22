@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="g9X-s3-pyZ" customClass="ListCollectionViewCell" customModule="TodoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xWb-XU-dW1">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgK-oS-MuK">
+                        <rect key="frame" x="16" y="16" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj1-fe-Uzk" userLabel="Separator">
+                        <rect key="frame" x="0.0" y="52.5" width="145" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Xb-XV-tp9"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2nO-OR-itt">
+                        <rect key="frame" x="16" y="69.5" width="113" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9t-DD-4oW">
+                                <rect key="frame" x="0.0" y="0.0" width="113" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L8-8I-tUg">
+                                <rect key="frame" x="0.0" y="28.5" width="113" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJy-RW-lid">
+                                <rect key="frame" x="0.0" y="57" width="113" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="daily_color"/>
+                <constraints>
+                    <constraint firstItem="2nO-OR-itt" firstAttribute="top" secondItem="kj1-fe-Uzk" secondAttribute="bottom" constant="16" id="0bq-cS-ATm"/>
+                    <constraint firstItem="kj1-fe-Uzk" firstAttribute="centerX" secondItem="xWb-XU-dW1" secondAttribute="centerX" id="9GL-OB-8v1"/>
+                    <constraint firstItem="sgK-oS-MuK" firstAttribute="top" secondItem="xWb-XU-dW1" secondAttribute="top" constant="16" id="dbA-wg-ydp"/>
+                    <constraint firstItem="2nO-OR-itt" firstAttribute="leading" secondItem="sgK-oS-MuK" secondAttribute="leading" id="ek8-ge-VKc"/>
+                    <constraint firstAttribute="trailing" secondItem="2nO-OR-itt" secondAttribute="trailing" constant="16" id="lxG-dG-nsi"/>
+                    <constraint firstItem="kj1-fe-Uzk" firstAttribute="top" secondItem="sgK-oS-MuK" secondAttribute="bottom" constant="16" id="qQq-FJ-zo9"/>
+                    <constraint firstAttribute="bottom" secondItem="2nO-OR-itt" secondAttribute="bottom" constant="16" id="rgX-Bf-Oys"/>
+                    <constraint firstItem="sgK-oS-MuK" firstAttribute="leading" secondItem="xWb-XU-dW1" secondAttribute="leading" constant="16" id="slf-AN-aFE"/>
+                    <constraint firstItem="kj1-fe-Uzk" firstAttribute="width" secondItem="xWb-XU-dW1" secondAttribute="width" id="tib-Kv-7qI"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="145" height="163"/>
+            <connections>
+                <outlet property="TypeTitle" destination="sgK-oS-MuK" id="6fd-dl-TOc"/>
+                <outlet property="typeTitle" destination="sgK-oS-MuK" id="2op-MI-9cN"/>
+                <outletCollection property="labels" destination="R9t-DD-4oW" collectionClass="NSMutableArray" id="iK3-ph-Zab"/>
+                <outletCollection property="labels" destination="4L8-8I-tUg" collectionClass="NSMutableArray" id="0Po-bi-ohp"/>
+                <outletCollection property="labels" destination="ZJy-RW-lid" collectionClass="NSMutableArray" id="fDj-kO-oAK"/>
+            </connections>
+            <point key="canvasLocation" x="83.333333333333343" y="105.46875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="daily_color">
+            <color red="0.31372549019607843" green="0.51372549019607838" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
